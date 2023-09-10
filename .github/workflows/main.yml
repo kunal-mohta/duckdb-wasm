@@ -754,8 +754,8 @@ jobs:
               if: env.NODE_AUTH_TOKEN != null && (startsWith(github.ref, 'refs/tags/v') || github.event_name == 'workflow_dispatch')
               run: |
                   ./scripts/npm_publish_lib.sh
-                  ./scripts/npm_publish_shell.sh
-                  ./scripts/npm_publish_react.sh
+                  # ./scripts/npm_publish_shell.sh
+                  # ./scripts/npm_publish_react.sh
 
             - name: Deploy GitHub Page
               if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads.main'

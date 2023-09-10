@@ -1,11 +1,11 @@
 {
-    "name": "@duckdb/duckdb-wasm",
+    "name": "@kunal-mohta/duckdb-wasm",
     "version": "1.11.0",
     "description": "DuckDB powered by WebAssembly",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/duckdb/duckdb-wasm.git"
+        "url": "https://github.com/kunal-mohta/duckdb-wasm.git"
     },
     "keywords": [
         "sql",
