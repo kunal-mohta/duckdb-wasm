@@ -276,8 +276,11 @@ if(EXISTS "${EXCEL_EXTENSION_CACHE_FILE}")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DDUCKDB_EXCEL_EXTENSION")
 endif()
 
-set(DUCKDB_WEB_JSON "duckdb_web_json")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DDUCKDB_JSON_EXTENSION")
+set(DUCKDB_WEB_JSON "")
+if(EXISTS "${JSON_EXTENSION_CACHE_FILE}")
+  set(DUCKDB_WEB_JSON "duckdb_web_json")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DDUCKDB_JSON_EXTENSION")
+endif()
 
 target_link_libraries(duckdb_web duckdb duckdb_web_fts duckdb_web_parquet ${DUCKDB_WEB_EXCEL} ${DUCKDB_WEB_JSON} arrow rapidjson ${THREAD_LIBS})
 target_link_libraries(duckdb_web_fts duckdb duckdb_fts)
