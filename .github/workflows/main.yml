@@ -245,6 +245,8 @@ jobs:
               uses: duckdb/duckdb-wasm-ci-env@v0.11
               with:
                   script: |-
+                      mkdir -p ./.ccache/extension
+                      touch ./.ccache/extension/json
                       cmake \
                           -S./lib/ \
                           -B./lib/build/debug \
@@ -341,6 +343,8 @@ jobs:
               uses: duckdb/duckdb-wasm-ci-env@v0.11
               with:
                   script: |-
+                      mkdir -p ./.ccache/extension
+                      touch ./.ccache/extension/json
                       cmake \
                           -S./lib/ \
                           -B./lib/build/release \
