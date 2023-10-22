@@ -694,11 +694,11 @@ jobs:
             #           yarn workspace @duckdb/duckdb-wasm-shell install:wasmpack
             #           yarn workspace @duckdb/duckdb-wasm-shell build:release
 
-            - name: Build @duckdb/duckdb-wasm-app
-              shell: bash
-              run: |
-                      rm -rf ./packages/duckdb-wasm-app/build/
-                      yarn workspace @duckdb/duckdb-wasm-app build:release
+            # - name: Build @duckdb/duckdb-wasm-app
+            #   shell: bash
+            #   run: |
+            #           rm -rf ./packages/duckdb-wasm-app/build/
+            #           yarn workspace @duckdb/duckdb-wasm-app build:release
 
             - name: Test @duckdb/duckdb-wasm on Chrome
               shell: bash
@@ -1023,11 +1023,11 @@ jobs:
             #           yarn workspace @duckdb/duckdb-wasm-shell install:wasmpack
             #           yarn workspace @duckdb/duckdb-wasm-shell build:release
 
-            - name: Build @duckdb/duckdb-wasm-app
-              shell: bash
-              run: |
-                      rm -rf ./packages/duckdb-wasm-app/build/
-                      yarn workspace @duckdb/duckdb-wasm-app build:release
+            # - name: Build @duckdb/duckdb-wasm-app
+            #   shell: bash
+            #   run: |
+            #           rm -rf ./packages/duckdb-wasm-app/build/
+            #           yarn workspace @duckdb/duckdb-wasm-app build:release
 
             - name: Test @duckdb/duckdb-wasm on Chrome
               shell: bash
