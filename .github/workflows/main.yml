@@ -687,12 +687,12 @@ jobs:
                       yarn workspace @duckdb/duckdb-wasm build:release
                       yarn workspace @duckdb/duckdb-wasm docs
 
-            - name: Build @duckdb/duckdb-wasm-shell
-              shell: bash
-              run: |
-                      rm -rf ./packages/duckdb-wasm-shell/dist/
-                      yarn workspace @duckdb/duckdb-wasm-shell install:wasmpack
-                      yarn workspace @duckdb/duckdb-wasm-shell build:release
+            # - name: Build @duckdb/duckdb-wasm-shell
+            #   shell: bash
+            #   run: |
+            #           rm -rf ./packages/duckdb-wasm-shell/dist/
+            #           yarn workspace @duckdb/duckdb-wasm-shell install:wasmpack
+            #           yarn workspace @duckdb/duckdb-wasm-shell build:release
 
             - name: Build @duckdb/duckdb-wasm-app
               shell: bash
@@ -1016,12 +1016,12 @@ jobs:
                       yarn workspace @duckdb/duckdb-wasm build:release
                       yarn workspace @duckdb/duckdb-wasm docs
 
-            - name: Build @duckdb/duckdb-wasm-shell
-              shell: bash
-              run: |
-                      rm -rf ./packages/duckdb-wasm-shell/dist/
-                      yarn workspace @duckdb/duckdb-wasm-shell install:wasmpack
-                      yarn workspace @duckdb/duckdb-wasm-shell build:release
+            # - name: Build @duckdb/duckdb-wasm-shell
+            #   shell: bash
+            #   run: |
+            #           rm -rf ./packages/duckdb-wasm-shell/dist/
+            #           yarn workspace @duckdb/duckdb-wasm-shell install:wasmpack
+            #           yarn workspace @duckdb/duckdb-wasm-shell build:release
 
             - name: Build @duckdb/duckdb-wasm-app
               shell: bash
